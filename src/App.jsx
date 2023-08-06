@@ -5,7 +5,7 @@ import ListsContext from "./context/lists-context";
 import NewListMain from "./AllListsPage/NewListMain";
 import MyListsMain from "./AllListsPage/MyListsMain";
 import EditListModal from "./AllListsPage/EditListModal";
-import LoadingPage from "./shared/loadingPage/loadingPage";
+import LoadingPage from "./shared/loadingPage/LoadingPage";
 import "./App.css";
 
 const App = () => {
