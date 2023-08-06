@@ -1,9 +1,9 @@
 import axios from "axios";
-import { useContext, useState, useEffect } from "react";
+import { useContext, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { DateTime } from "luxon";
 import NewTask from "./NewTask/NewTask.jsx";
-import LoadingPage from "../shared/loadingPage/loadingPage.jsx";
+import LoadingPage from "../shared/loadingPage/LoadingPage.jsx";
 import TaskList from "./TaskList/TaskList.jsx";
 import Calendar from "./TaskList/Calendar.jsx";
 import ListsContext from "../context/lists-context.js";
