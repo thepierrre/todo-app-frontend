@@ -1,6 +1,6 @@
 import { useRouteError, Link } from "react-router-dom";
 
-import "./ErrorPage.css";
+// import "./ErrorPage.css";
 
 const ErrorPage = () => {
   const error = useRouteError();
