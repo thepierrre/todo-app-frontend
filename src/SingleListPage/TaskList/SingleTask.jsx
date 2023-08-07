@@ -42,7 +42,7 @@ const SingleTask = (props) => {
     <div className="task-bar">
       <div className="task-bar--item done">
         <IconButton onClick={() => markTaskAsDoneHandler(task._id)}>
-          <CheckCircleOutlineIcon color="primary" />
+          <CheckCircleOutlineIcon color={isDone ? "primary" : "string"} />
         </IconButton>
       </div>
       <input
