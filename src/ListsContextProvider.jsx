@@ -10,7 +10,6 @@ const ListsContextProvider = (props) => {
   const [enteredListIsTouched, setEnteredListIsTouched] = useState(false);
   const [enteredListIsValid, setEnteredListIsValid] = useState(false);
   const [listToEditId, setListToEditId] = useState(undefined);
-  const [isLoading, setIsLoading] = useState(true);
   const [editedListIsValid, setEditedListIsValid] = useState(false);
   const [editedListIsTouched, setEditedListIsTouched] = useState(false);
 
@@ -41,8 +40,6 @@ const ListsContextProvider = (props) => {
         setEnteredListIsValid,
         listToEditId,
         setListToEditId,
-        isLoading,
-        setIsLoading,
         editedListIsValid,
         setEditedListIsValid,
         editedListIsTouched,

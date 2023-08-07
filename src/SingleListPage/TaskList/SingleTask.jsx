@@ -26,7 +26,7 @@ const SingleTask = (props) => {
 
   const taskTextClassName = `task-bar--item text ${isDone ? "done-task" : ""}`;
   const taskDateClassName = `task-bar--item date ${date ? "" : "no-date"}`;
-  const taskTagClassName = `tag ${tag ? "" : "empty"}`;
+  const taskTagClassName = `tag ${tag ? "" : "tag-empty"}`;
 
   const open = Boolean(anchorEl);
 

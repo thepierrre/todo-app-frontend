@@ -7,7 +7,6 @@ import TaskList from "./TaskList/TaskList.jsx";
 import Calendar from "./TaskList/Calendar.jsx";
 import ListsContext from "../context/lists-context.js";
 import TasksContext from "../context/tasks-context.js";
-import LoadingPage from "../shared/loadingPage/LoadingPage.jsx";
 import IconButton from "@mui/material/IconButton";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import "./SingleListPage.css";
@@ -21,8 +20,6 @@ export const formattedDate = date.toLocaleString({
 });
 
 function SingleListPage() {
-  const { isLoading, setIsLoading } = useContext(ListsContext);
-
   const { tasks, setTasks, listName, setListName, calendarIsShown } =
     useContext(TasksContext);
 
@@ -36,7 +33,6 @@ function SingleListPage() {
         );
         setTasks(response.data.listWithTasks.tasks);
         setListName(response.data.listWithTasks.name);
-        setIsLoading(false);
       } catch (err) {}
     };
     fetchTasks();
@@ -44,24 +40,21 @@ function SingleListPage() {
 
   return (
     <>
-      {isLoading && <LoadingPage />}
-      {!isLoading && (
-        <div className="app">
-          <header className="header">
-            <div className="header__nav">
-              <Link to="/" className="home-link">
-                <IconButton>
-                  <ArrowBackIosNewIcon fontSize="large" />
-                </IconButton>
-              </Link>
-              <h1 className="title">{listName || "My Lists"}</h1>
-            </div>
-          </header>
-          <NewTask />
-          {calendarIsShown && <Calendar />}
-          <TaskList />
-        </div>
-      )}
+      <div className="app">
+        <header className="header">
+          <div className="header__nav">
+            <Link to="/" className="home-link">
+              <IconButton>
+                <ArrowBackIosNewIcon fontSize="large" />
+              </IconButton>
+            </Link>
+            <h1 className="title">{listName || "My Lists"}</h1>
+          </div>
+        </header>
+        <NewTask />
+        {calendarIsShown && <Calendar />}
+        <TaskList />
+      </div>
     </>
   );
 }
