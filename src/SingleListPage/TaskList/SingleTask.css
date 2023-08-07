@@ -99,7 +99,7 @@
     width: 95%;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 2rem 1.5rem;
+    grid-template-rows: 2.25rem 1.5rem;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
     gap: 0;
   }
