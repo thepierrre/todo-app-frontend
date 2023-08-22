@@ -2,12 +2,10 @@
   width: 50rem;
   display: flex;
   flex-direction: row;
-  gap: 3px;
   height: 3rem;
 }
 
 .single-list-mainpage > div {
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
   background-color: white;
 }
 
