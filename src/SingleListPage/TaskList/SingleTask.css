@@ -135,10 +135,6 @@
     height: 100%;
   }
 
-  .no-date {
-    font-size: 0.8rem;
-  }
-
   .tag {
     width: 100%;
     grid-column: 5 / span 3;
