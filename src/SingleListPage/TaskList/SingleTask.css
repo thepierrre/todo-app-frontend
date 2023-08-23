@@ -125,6 +125,7 @@
     width: 100%;
     grid-column: 1 / span 1;
     grid-row: 1 / span 2;
+    border-right: none;
   }
 
   .remove {
