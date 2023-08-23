@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import ErrorPage from "./shared/errorPage/ErrorPage.jsx";
+import ErrorPage from "./shared/errorPage/ErrorPage";
 import SingleListPage from "./SingleListPage/SingleListPage";
 import App from "./App";
 import { ThemeProvider } from "@mui/material/styles";
